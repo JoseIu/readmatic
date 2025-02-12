@@ -1,0 +1,21 @@
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  /* Box shadow like a border */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.user__name {
+  font-size: 1.5rem;
+}
+.user__id {
+  font-size: 0.9rem;
+}
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}

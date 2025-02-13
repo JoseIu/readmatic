@@ -1,0 +1,8 @@
+.preview {
+  padding: 1rem;
+  outline: 0.125rem solid #ccc;
+  border-radius: 0.25rem;
+  max-height: calc(100dvh - 5.5rem);
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}

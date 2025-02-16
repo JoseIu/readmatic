@@ -1,6 +1,7 @@
 .content {
-  height: calc(100vh - 3.1rem);
+  height: calc(100vh - 5.1rem);
   display: grid;
+  padding: 1rem;
   grid-template-columns: 300px 1fr;
 }
 .content__editor {

@@ -2,10 +2,37 @@
   height: calc(100vh - 5.1rem);
   display: grid;
   padding: 1rem;
+  gap: 1rem;
   grid-template-columns: 300px 1fr;
 }
 .content__editor {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: 0.5rem;
+}
+
+.scrollbar {
+  --sb-track-color: #b3b3b3;
+  --sb-thumb-color: #777777;
+  --sb-size: 0.625rem;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 4px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .scrollbar {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
 }

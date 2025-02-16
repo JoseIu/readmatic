@@ -10,7 +10,7 @@ export const Preview = () => {
   const markdown = defaultSections.map((section) => section.content).join('\n');
   return (
     <ReactMarkdown
-      className="preview"
+      className="preview scrollbar"
       remarkPlugins={[remarkGfm]}
       rehypePlugins={[rehypeRaw]}
       components={{

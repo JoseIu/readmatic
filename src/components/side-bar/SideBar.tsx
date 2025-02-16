@@ -16,7 +16,7 @@ export const SideBar = () => {
     newSectionSort(newArray);
   };
   return (
-    <aside className="sidebar">
+    <aside className="sidebar scrollbar">
       <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
         <h2>Your sections</h2>
         <SortableContext items={sections} strategy={verticalListSortingStrategy}>

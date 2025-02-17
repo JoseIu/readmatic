@@ -10,8 +10,6 @@ type Pops = {
 };
 
 export const SectionItem = ({ section }: Pops) => {
-  // console.log('✅ Componente SectionItem montado con sección:', section);
-
   const { addSectionActive } = useSection();
   const { attributes, listeners, setNodeRef, transform, transition } = useSortable({ id: section.id });
 
@@ -21,7 +19,6 @@ export const SectionItem = ({ section }: Pops) => {
   };
 
   const onSelectSection = () => {
-    console.log('Seccion:', section);
     addSectionActive(section);
   };
   return (
@@ -29,7 +26,7 @@ export const SectionItem = ({ section }: Pops) => {
       <button {...attributes} {...listeners} aria-label="Drag button to move section">
         <GragIcon className="drag-icon" />
       </button>
-      <p className="user__name">{section.title}-a</p>
+      <p className="user__name">{section.title}</p>
     </li>
   );
 };

@@ -6,8 +6,8 @@ import remarkGfm from 'remark-gfm';
 import { useSection } from '../../hooks/useSection';
 import './preview.css';
 export const Preview = () => {
-  const { defaultSections } = useSection();
-  const markdown = defaultSections.map((section) => section.content).join('\n');
+  const { sections } = useSection();
+  const markdown = sections.map((section) => section.content).join('\n');
   return (
     <ReactMarkdown
       className="preview scrollbar"

@@ -4,13 +4,19 @@ import OneDarkPro from '../../theme/onedarkpro.json';
 import './monacoEditor.css';
 
 export const MonacoEditor = () => {
-  const { sectionActive } = useSection();
+  const { sectionActive, updateSection } = useSection();
   const handleEditorDidMount = (monaco: Monaco) => {
     monaco.editor.defineTheme('OneDarkPro', {
       base: 'vs-dark',
       inherit: true,
       ...OneDarkPro,
     });
+  };
+
+  const onUpdadeSection = (value: string | undefined) => {
+    if (!value) return;
+    if (!sectionActive) return;
+    updateSection(sectionActive.id, value);
   };
   return (
     <div className="editor">
@@ -22,6 +28,7 @@ export const MonacoEditor = () => {
         value={sectionActive?.content ?? ''}
         defaultLanguage="markdown"
         beforeMount={handleEditorDidMount}
+        onChange={(value) => onUpdadeSection(value)}
       />
     </div>
   );

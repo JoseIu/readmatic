@@ -8,7 +8,7 @@
   --sb-thumb-color: #16171d;
   --border-color: #e0e0e0;
   --dark-mode-ball: rgba(255, 255, 255, 0.575);
-  --bg-pattern: url('./light_pattern.webp');
+  --bg-pattern: url('/light_pattern.webp');
 }
 /* @media (prefers-color-scheme: dark) {
   :root {
@@ -17,7 +17,7 @@
     --sb-thumb-color: #fff;
     --border-color: #2b2b2b;
 
-    --bg-pattern: url('./dark_pattern.webp');
+    --bg-pattern: url('/dark_pattern.webp');
   }
 } */
 img,

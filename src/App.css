@@ -38,5 +38,5 @@
   --sb-thumb-color: #fff;
   --border-color: #2b2b2b;
   --dark-mode-ball: #2b2b2b3a;
-  --bg-pattern: url('./dark_pattern.webp');
+  --bg-pattern: url('/dark_pattern.webp');
 }

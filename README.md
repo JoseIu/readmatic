@@ -1,50 +1,39 @@
-# React + TypeScript + Vite
+# READMATIC
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![readmatic](/public/readmatic.webp)
 
-Currently, two official plugins are available:
+READMATIC es una aplicación que te permite generar archivos README de manera sencilla y rápida. Cuenta con secciones predeterminadas que puedes combinar según tus necesidades. Una vez seleccionadas, puedes reordenarlas, eliminarlas y rehacerlas fácilmente.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Además, dispone de un editor para modificar cada sección, una vista previa en tiempo real para visualizar los cambios y una opción para copiar el código generado con un solo click.
 
-## Expanding the ESLint configuration
+## Tecnologías utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React
+- TypeScript
+- React DnD (Drag and Drop)
+- Markdown rendering
 
-- Configure the top-level `parserOptions` property like this:
+## Instalación y uso
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clona el repositorio:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+   ```bash
+   git clone https://github.com/tuusuario/readmatic.git
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+2. Instala las dependencias:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   ```bash
+   cd readmatic
+   npm install
+   ```
+
+3. Ejecuta el proyecto en modo desarrollo:
+
+   ```bash
+   npm run dev
+   ```
+
+## Deploy
+
+- Demo: [Ver](https://github.com/JoseIu/readmatic)

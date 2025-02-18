@@ -21,7 +21,7 @@ export const MonacoEditor = () => {
   return (
     <div className="editor">
       <Editor
-        height="calc(100vh - 3.1rem)"
+        height="100%"
         width="100%"
         theme="OneDarkPro"
         options={{ minimap: { enabled: false } }}

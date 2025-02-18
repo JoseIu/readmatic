@@ -2,7 +2,7 @@
   {
     "id": "0",
     "title": "Authors",
-    "content": "\n## Authors\n- [@octokatherine](https://www.github.com/octokatherine)\n"
+    "content": "\n## Authors\n- [@Joselu](https://www.github.com/JoseIu)\n"
   },
   {
     "id": "1",
@@ -127,6 +127,6 @@
   {
     "id": "25",
     "title": "API Reference",
-    "content": "## API Reference\n\n### Get all items\n\nRetrieve a list of all items.\n\n```http\nGET /api/items\n```\n\n| Parameter | Type     | Description                |\n| :-------- | :------- | :------------------------- |\n| `api_key` | `string` | **Required**. Your API key |\n\n### Get item\n\nRetrieve a specific item by its ID.\n\n```http\nGET /api/items/{id}\n```\n\n| Parameter | Type     | Description                       |\n| :-------- | :------- | :-------------------------------- |\n| `id`      | `string` | **Required**. ID of item to fetch |\n\n### Add Function\n\nTakes two numbers and returns the sum.\n\n```js\nfunction add(num1, num2) {\n  return num1 + num2;\n}\n```\n"
+    "content": "## API Reference\n\n### Get all items\n\nRetrieve a list of all items.\n\n```http\nGET /api/items\n```\n\n| Parameter | Type    | Description                |\n|-----------|---------|----------------------------|\n| api_key   | string  | **Required**. Your API key |\n\n### Get item\n\nRetrieve a specific item by its ID.\n\n```http\nGET /api/items/{id}\n```\n\n| Parameter | Type    | Description                       |\n|-----------|---------|------------------------------------|\n| id        | string  | **Required**. ID of item to fetch |\n\n### Add Function\n\nTakes two numbers and returns the sum.\n\n```js\nfunction add(num1, num2) {\n  return num1 + num2;\n}\n```"
   }
 ]

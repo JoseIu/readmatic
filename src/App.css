@@ -1,20 +1,16 @@
 .content {
-  height: calc(100vh - 5.1rem);
+  height: calc(100dvh - 4.4rem);
   display: grid;
-  padding: 1rem;
   gap: 1rem;
   grid-template-columns: 300px 1fr;
 }
 .content__editor {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.5rem;
 }
 
 .scrollbar {
-  --sb-track-color: #b3b3b3;
-  --sb-thumb-color: #777777;
-  --sb-size: 0.625rem;
+  --sb-size: 0.4375rem;
 }
 
 .scrollbar::-webkit-scrollbar {
@@ -23,16 +19,24 @@
 
 .scrollbar::-webkit-scrollbar-track {
   background: var(--sb-track-color);
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
   background: var(--sb-thumb-color);
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 @supports not selector(::-webkit-scrollbar) {
   .scrollbar {
     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
+}
+.dark-mode {
+  --negro: #fff;
+  --white-color: #16171d;
+  --sb-thumb-color: #fff;
+  --border-color: #2b2b2b;
+  --dark-mode-ball: #2b2b2b3a;
+  --bg-pattern: url('./dark_pattern.webp');
 }

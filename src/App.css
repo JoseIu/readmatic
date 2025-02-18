@@ -1,5 +1,5 @@
 .content {
-  height: calc(100dvh - 4.4rem);
+  height: calc(100dvh - 4.7rem);
   display: grid;
   gap: 1rem;
   grid-template-columns: 300px 1fr;

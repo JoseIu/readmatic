@@ -1,10 +1,12 @@
 .preview {
   padding: 1rem;
   max-height: 1000%;
-  /* height: calc(100dvh - 8.6rem); */
-  height: 100%;
+  height: calc(100dvh - 8.8rem);
+
+  /* height: 100%; */
 
   overflow-y: auto;
   scrollbar-gutter: stable;
   background-color: var(--white-color);
+  background-color: rebeccapurple;
 }

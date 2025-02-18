@@ -1,9 +1,9 @@
 .raw-preview {
   position: relative;
   padding: 0.5rem 1rem;
-  /* height: calc(100dvh - 8.6rem); */
-  height: 100%;
+  height: calc(100dvh - 7.9rem);
   background-color: var(--white-color);
+  /* background-color: yellow; */
 }
 
 .raw-preview__code {

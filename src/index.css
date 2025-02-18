@@ -1,20 +1,31 @@
 @charset "UTF-8";
 
 :root {
-  --negro: #393939;
-  /* Tipografía */
+  --negro: #16171d;
+  --white-color: #fff;
   --tipo-principal: Helvetica, Arial, sans-serif;
   --tipo-secundaria: Verdana;
+  --sb-thumb-color: #16171d;
+  --border-color: #e0e0e0;
+  --dark-mode-ball: rgba(255, 255, 255, 0.575);
+  --bg-pattern: url('./light_pattern.webp');
 }
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #fff;
+    --white-color: #16171d;
+    --sb-thumb-color: #fff;
+    --border-color: #2b2b2b;
 
+    --bg-pattern: url('./dark_pattern.webp');
+  }
+} */
 img,
 picture,
 video,
 iframe,
 figure {
   max-width: 100%;
-  /* width: 100%; */
-  /* display: block; */
 }
 
 a {
@@ -24,12 +35,10 @@ a {
   font-size: inherit;
 }
 
-/* ... excepto los que se encuentran en párrafos */
 p a {
   display: inline;
 }
 
-/* Quitamos los puntos de los <li> */
 aside li,
 nav li {
   list-style-type: none;
@@ -39,7 +48,6 @@ nav li {
   padding: 0;
 }
 
-/* Configuramos anclas suaves */
 html {
   scroll-behavior: smooth;
 }
@@ -60,12 +68,6 @@ label {
   display: block;
 }
 
-table,
-tr,
-td {
-  /* border-collapse: collapse;
-  border-spacing: 0; */
-}
 button {
   border: 0;
 }
@@ -82,5 +84,7 @@ body {
   font-size: 100%;
   font-family: var(--tipo-principal);
   color: var(--negro);
+  background-image: var(--bg-pattern);
+  /* background-image: url('./light_pattern.webp'); */
   text-wrap: pretty;
 }

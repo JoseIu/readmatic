@@ -1,0 +1,28 @@
+.preview-section {
+  display: flex;
+  flex-direction: column;
+}
+.preview-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* padding: 0.5rem; */
+  /* background-color: var(--negro); */
+}
+.preview-section__btn {
+  width: 100%;
+  color: var(--negro);
+
+  padding: 0.5rem;
+  /* border-radius: 0.25rem; */
+  border-bottom: 0.0625rem solid var(--border-color);
+  transition: background-color 0.2s ease-in, color 0.1s ease-in;
+}
+.preview-section__btn--active {
+  /* background-color: rgb(40, 42, 54); */
+  background-color: var(--negro);
+  color: var(--white-color);
+  width: 100%;
+
+  outline: none;
+}

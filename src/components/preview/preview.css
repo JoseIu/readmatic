@@ -1,9 +1,10 @@
 .preview {
   padding: 1rem;
-  outline: 0.125rem solid #ccc;
-  border-radius: 0.25rem;
-  height: calc(100vh - 7rem);
+  max-height: 1000%;
+  /* height: calc(100dvh - 8.6rem); */
+  height: 100%;
 
   overflow-y: auto;
   scrollbar-gutter: stable;
+  background-color: var(--white-color);
 }

@@ -24,7 +24,7 @@ export const MonacoEditor = () => {
         height="100%"
         width="100%"
         theme="OneDarkPro"
-        options={{ minimap: { enabled: false } }}
+        options={{ minimap: { enabled: false }, lineNumbers: 'off' }}
         value={sectionActive?.content ?? ''}
         defaultLanguage="markdown"
         beforeMount={handleEditorDidMount}

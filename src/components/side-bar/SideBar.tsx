@@ -18,7 +18,7 @@ export const SideBar = () => {
   return (
     <aside className="sidebar scrollbar">
       <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
-        <h2>Your sections</h2>
+        <h2 className="sidebar__title">Your sections</h2>
         <SortableContext items={sections} strategy={verticalListSortingStrategy}>
           <ul className="sections">
             {sections.map((section) => (
@@ -28,7 +28,7 @@ export const SideBar = () => {
         </SortableContext>
 
         <section>
-          <h2> Sections Avalilable</h2>
+          <h2 className="sidebar__title"> Sections Avalilable</h2>
 
           <DefaultSections />
         </section>

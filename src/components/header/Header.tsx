@@ -1,4 +1,14 @@
+import { ToggleDarkMode } from '../toggle-dark-mode/ToggleDarkMode';
 import './header.css';
 export const Header = () => {
-  return <div className="header">Header</div>;
+  return (
+    <header className="header">
+      <h1 className="header__title">
+        {/* <img className="header__logo" src="" alt="" /> */}
+        Readmatic
+      </h1>
+
+      <ToggleDarkMode />
+    </header>
+  );
 };

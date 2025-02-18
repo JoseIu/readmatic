@@ -1,0 +1,51 @@
+.toggle-mode {
+  width: 6rem;
+  position: relative;
+}
+.toggle-mode__input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.toggle-mode__input:checked + .toggle-mode__label {
+  /* background-color: #242424; */
+}
+.toggle-mode__input:checked + .toggle-mode__label::after {
+  /* left: 50px; */
+  transform: translateX(180%);
+}
+.toggle-mode__label {
+  padding: 0.5rem 0.7rem;
+  position: relative;
+  display: block;
+  background-color: var(--negro);
+  color: var(--white-color);
+  border-radius: 999999px;
+
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.toggle-mode__label::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 5.5px;
+  width: 30px;
+  height: 76%;
+  background-color: var(--dark-mode-ball);
+  border-radius: 9999999px;
+  transition: 0.3s, background-color 0.3s ease-in;
+}
+.toggle-mode__button {
+  padding: 0;
+  user-select: none;
+  pointer-events: none;
+}
+.toggle-mode__icon {
+  width: 1.2rem;
+  cursor: pointer;
+  user-select: none;
+  pointer-events: none;
+}

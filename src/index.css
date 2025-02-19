@@ -1,9 +1,25 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: 'Geist';
+  src: url(./assets/fonts/Geist-Light.woff) format('woff');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url(./assets/fonts/Geist-Regular.woff) format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url(./assets/fonts/Geist-SemiBold.woff) format('woff');
+  font-weight: 600;
+}
+
 :root {
   --negro: #16171d;
   --white-color: #fff;
-  --tipo-principal: Helvetica, Arial, sans-serif;
+  --tipo-principal: 'Geist', Helvetica, Arial, sans-serif;
   --tipo-secundaria: Verdana;
   --sb-thumb-color: #16171d;
   --border-color: #e0e0e0;

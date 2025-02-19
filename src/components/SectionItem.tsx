@@ -23,7 +23,7 @@ export const SectionItem = ({ section }: Pops) => {
   };
   return (
     <li style={style} ref={setNodeRef} onClick={onSelectSection} className="user">
-      <button {...attributes} {...listeners} aria-label="Drag button to move section">
+      <button className="drag-button" {...attributes} {...listeners} aria-label="Drag button to move section">
         <GragIcon className="drag-icon" />
       </button>
       <p className="user__name">{section.title}</p>

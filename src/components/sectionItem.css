@@ -21,6 +21,9 @@
   flex-direction: column;
   gap: 0.75rem;
 }
+.drag-button {
+  padding: 0;
+}
 .drag-icon {
   width: 1.2rem;
   cursor: pointer;

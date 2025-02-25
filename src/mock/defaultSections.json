@@ -128,5 +128,10 @@
     "id": "25",
     "title": "API Reference",
     "content": "## API Reference\n\n### Get all items\n\nRetrieve a list of all items.\n\n```http\nGET /api/items\n```\n\n| Parameter | Type    | Description                |\n|-----------|---------|----------------------------|\n| api_key   | string  | **Required**. Your API key |\n\n### Get item\n\nRetrieve a specific item by its ID.\n\n```http\nGET /api/items/{id}\n```\n\n| Parameter | Type    | Description                       |\n|-----------|---------|------------------------------------|\n| id        | string  | **Required**. ID of item to fetch |\n\n### Add Function\n\nTakes two numbers and returns the sum.\n\n```js\nfunction add(num1, num2) {\n  return num1 + num2;\n}\n```"
+  },
+  {
+    "id": "26",
+    "title": "Project Structure",
+    "content": "## Project Structure\n\n```\nmy-app/\n├── node_modules/\n├── public/\n│   ├── favicon.ico\n│   ├── index.html\n│   └── robots.txt\n├── src/\n│   ├── index.css\n│   └── index.js\n├── .gitignore\n├── package.json\n└── README.md\n```"
   }
 ]

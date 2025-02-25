@@ -133,5 +133,30 @@
     "id": "26",
     "title": "Project Structure",
     "content": "## Project Structure\n\n```\nmy-app/\n├── node_modules/\n├── public/\n│   ├── favicon.ico\n│   ├── index.html\n│   └── robots.txt\n├── src/\n│   ├── index.css\n│   └── index.js\n├── .gitignore\n├── package.json\n└── README.md\n```"
+  },
+  {
+    "id": "27",
+    "title": "Installation",
+    "content": "## Installation\n\n```bash\n# Clone repository\ngit clone https://github.com/user/my-app.git\n\n# Install dependencies\nnpm install\n\n# Start development server\nnpm run dev\n```\n\n**Requisitos previos**: Node.js v18+ y npm v9+"
+  },
+  {
+    "id": "28",
+    "title": "Component Example",
+    "content": "## Button Component\n\n```jsx\nimport React from 'react';\n\nexport default function Button({ text }) {\n  return (\n    <button className=\"bg-blue-500 text-white p-2 rounded\">\n      {text}\n    </button>\n  );\n}\n```\n\nProps:\n- `text`: String (Texto del botón)"
+  },
+  {
+    "id": "29",
+    "title": "Environment Variables",
+    "content": "## Required Env Vars\n\nCrea un archivo `.env` en la raíz:\n\n```env\nAPI_KEY=your_api_key_here\nBASE_URL=https://api.example.com\nDEBUG_MODE=false\n```\n\n| Variable    | Descripción                     |\n|-------------|---------------------------------|\n| API_KEY     | Clave para autenticación API    |\n| BASE_URL    | Endpoint base del servicio      |"
+  },
+  {
+    "id": "30",
+    "title": "Workflow",
+    "content": "## Development Workflow\n\n```mermaid\nflowchart TD\n  A[git pull] --> B[Instalar dependencias]\n  B --> C[Ejecutar tests]\n  C --> D[Modificar código]\n  D --> E[Commit cambios]\n  E --> F[Push a repositorio]\n```\n\n**Regla de oro**: Nunca hacer push directamente a `main`."
+  },
+  {
+    "id": "31",
+    "title": "Troubleshooting",
+    "content": "## Common Errors\n\n**Error: Module not found**\n```bash\nrm -rf node_modules && npm install\n```\n\n**Error: Port 3000 in use**\n```bash\nsudo lsof -i :3000\nkill -9 <PID>\n```\n\n**Error: ESLint conflicts**\n```bash\nnpm run lint -- --fix\n```"
   }
 ]

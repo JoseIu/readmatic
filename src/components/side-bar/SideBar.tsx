@@ -28,7 +28,7 @@ export const SideBar = () => {
         </SortableContext>
 
         <section>
-          <h2 className="sidebar__title"> Sections Avalilable</h2>
+          <h2 className="sidebar__title"> Sections Available</h2>
 
           <DefaultSections />
         </section>

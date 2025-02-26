@@ -158,5 +158,10 @@
     "id": "31",
     "title": "Troubleshooting",
     "content": "## Common Errors\n\n**Error: Module not found**\n```bash\nrm -rf node_modules && npm install\n```\n\n**Error: Port 3000 in use**\n```bash\nsudo lsof -i :3000\nkill -9 <PID>\n```\n\n**Error: ESLint conflicts**\n```bash\nnpm run lint -- --fix\n```"
+  },
+  {
+    "id": "33",
+    "title": "Roadmap",
+    "content": "## Roadmap\n\n- [x] Add Changelog\n- [x] Add back to top links\n- [ ] Add Additional Templates w/ Examples\n- [ ] Add \"components\" document to easily copy & paste sections of the readme\n- [ ] Multi-language Support\n    - [ ] Chinese\n    - [ ] Spanish"
   }
 ]

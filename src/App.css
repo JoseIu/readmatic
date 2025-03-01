@@ -2,7 +2,7 @@
   height: calc(100dvh - 4.7rem);
   display: grid;
   gap: 1rem;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 310px 1fr;
 }
 .content__editor {
   display: grid;

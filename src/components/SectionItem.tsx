@@ -3,6 +3,7 @@ import { CSS } from '@dnd-kit/utilities';
 import { useSection } from '../hooks/useSection';
 import { Section } from '../interfaces/section.interface';
 import { GragIcon } from './icons/GragIcon';
+import { RemoveIcon } from './icons/RemoveIcon';
 import './sectionItem.css';
 
 type Pops = {
@@ -10,7 +11,7 @@ type Pops = {
 };
 
 export const SectionItem = ({ section }: Pops) => {
-  const { addSectionActive } = useSection();
+  const { addSectionActive, removeSection } = useSection();
   const { attributes, listeners, setNodeRef, transform, transition } = useSortable({ id: section.id });
 
   const style = {
@@ -27,6 +28,11 @@ export const SectionItem = ({ section }: Pops) => {
         <GragIcon className="drag-icon" />
       </button>
       <p className="user__name">{section.title}</p>
+      <div>
+        <button className="drag-remove" onClick={() => removeSection(section.id)}>
+          <RemoveIcon className="drag-reset" />
+        </button>
+      </div>
     </li>
   );
 };

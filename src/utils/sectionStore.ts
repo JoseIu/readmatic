@@ -20,3 +20,9 @@ export const updateSectionInStorage = (sectionId: string, content: string) => {
 
   saveSectionsToStorage(sections);
 };
+
+export const removeSectionFromStorage = (sectionId: string) => {
+  const sections = getSectionsFromStorage();
+  const newSections = sections.filter((section) => section.id !== sectionId);
+  saveSectionsToStorage(newSections);
+};

@@ -6,7 +6,8 @@ type SectionAction =
   | { type: 'ADD_SECTION'; payload: Section }
   | { type: 'NEW_SECTIONS_SORT'; payload: Section[] }
   | { type: 'ADD_SECTION_ACTIVE'; payload: Section }
-  | { type: 'UPDATE_SECTION'; payload: { sectionId: string; content: string } };
+  | { type: 'UPDATE_SECTION'; payload: { sectionId: string; content: string } }
+  | { type: 'REMOVE_SECTION'; payload: string };
 
 export const sectionReducer = (state: SectionState, action: SectionAction) => {
   switch (action.type) {
@@ -42,6 +43,11 @@ export const sectionReducer = (state: SectionState, action: SectionAction) => {
         ),
       };
     }
+    case 'REMOVE_SECTION':
+      return {
+        ...state,
+        sections: state.sections.filter((section) => section.id !== action.payload),
+      };
 
     default:
       return state;

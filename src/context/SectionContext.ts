@@ -9,6 +9,7 @@ interface SectionsContextProps {
   addSectionActive: (section: Section) => void;
   addSection: (section: Section) => void;
   updateSection: (sectionId: string, content: string) => void;
+  removeSection: (sectionId: string) => void;
 }
 
 export const SectionContext = createContext<SectionsContextProps>({} as SectionsContextProps);

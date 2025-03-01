@@ -1,7 +1,12 @@
 import { useReducer } from 'react';
 import { Section } from '../interfaces/section.interface';
 import defaultoSectionsPlaceholder from '../mock/defaultSections.json';
-import { getSectionsFromStorage, saveSectionsToStorage, updateSectionInStorage } from '../utils/sectionStore';
+import {
+  getSectionsFromStorage,
+  removeSectionFromStorage,
+  saveSectionsToStorage,
+  updateSectionInStorage,
+} from '../utils/sectionStore';
 import { SectionContext } from './SectionContext';
 import { sectionReducer } from './sectionReducer';
 
@@ -53,6 +58,11 @@ export const SectionProvider = ({ children }: Props) => {
     dispatch({ type: 'UPDATE_SECTION', payload: { sectionId, content } });
     updateSectionInStorage(sectionId, content);
   };
+  const removeSection = (sectionId: string) => {
+    dispatch({ type: 'REMOVE_SECTION', payload: sectionId });
+
+    removeSectionFromStorage(sectionId);
+  };
 
   return (
     <SectionContext.Provider
@@ -62,6 +72,7 @@ export const SectionProvider = ({ children }: Props) => {
         addSectionActive,
         newSectionSort,
         updateSection,
+        removeSection,
       }}
     >
       {children}

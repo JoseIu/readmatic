@@ -1,0 +1,29 @@
+.search {
+  position: relative;
+  background-color: var(--white-color);
+  margin-bottom: 1rem;
+}
+.search__label {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.search__input {
+  width: 100%;
+  padding: 0.7rem;
+  padding-left: 2.5rem;
+  border: none;
+  outline: 0.0625rem solid var(--border-color);
+  border-radius: 0.25rem;
+}
+.search__input:focus {
+  outline: 0.125rem solid var(--border-color);
+}
+.search__icon {
+  position: absolute;
+  top: 26%;
+  left: 0.5rem;
+  fill: none;
+  color: var(--negro);
+  width: 1.3rem;
+}

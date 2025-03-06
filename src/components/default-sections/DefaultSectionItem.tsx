@@ -15,7 +15,11 @@ export const DefaultSectionItem = ({ section }: Props) => {
   return (
     <li className="deault-item">
       <p className="deault-item__text">{section.title}</p>
-      <button onClick={onAddSection}>
+      <button
+        className="deault-item__button"
+        aria-label="button to add default section to your sectios"
+        onClick={onAddSection}
+      >
         <PlusIcon className="deault-item__icon" />
       </button>
     </li>

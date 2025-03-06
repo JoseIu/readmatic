@@ -23,14 +23,23 @@ export const SectionItem = ({ section }: Pops) => {
     addSectionActive(section);
   };
   return (
-    <li style={style} ref={setNodeRef} onClick={onSelectSection} className="user">
-      <button className="drag-button" {...attributes} {...listeners} aria-label="Drag button to move section">
-        <GragIcon className="drag-icon" />
+    <li style={style} ref={setNodeRef} onClick={onSelectSection} className="section">
+      <button
+        className="section__drag-button"
+        {...attributes}
+        {...listeners}
+        aria-label="Drag button to move section"
+      >
+        <GragIcon className="section__icon" />
       </button>
-      <p className="user__name">{section.title}</p>
+      <p className="section__name">{section.title}</p>
       <div>
-        <button className="drag-remove" onClick={() => removeSection(section.id)}>
-          <RemoveIcon className="drag-reset" />
+        <button
+          className="section__remove"
+          aria-label="button to remove section"
+          onClick={() => removeSection(section.id)}
+        >
+          <RemoveIcon className="section__reset" />
         </button>
       </div>
     </li>
